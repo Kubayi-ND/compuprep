@@ -10,7 +10,7 @@ const Hero = () => {
             <div>
               <div>
                 <div className="mt-6 sm:max-w-xl">
-                  <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
+                  <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl text-center">
                     Tertiary Computer Literacy Practice Platform
                   </h1>
                   <p className="mt-6 text-xl text-gray-500">
@@ -67,8 +67,8 @@ const Hero = () => {
               </div> */}
               <div className="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full ">
                 <Image
-                  className="w-full rounded-[80px] shadow-xl lg:h-full lg:w-auto lg:max-w-none"
-                  src="/hero-image.png"
+                  className="w-full rounded-full shadow-xl lg:h-full lg:w-auto lg:max-w-none"
+                  src="/hero-image.jpeg"
                   alt="Computer Literacy"
                   width={500}
                   height={500}
