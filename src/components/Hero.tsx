@@ -14,7 +14,7 @@ const Hero = () => {
                     Tertiary Computer Literacy Practice Platform
                   </h1>
                   <p className="mt-6 text-xl text-gray-500">
-                    Practice Microsoft Office skills with our automated grading platform designed specifically for university students.
+                    Practice Microsoft Office skills with our automated grading platform designed specifically for tertiary students.
                   </p>
                 </div>
                 <div className="mt-10 sm:flex sm:gap-4">
