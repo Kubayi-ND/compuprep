@@ -3,7 +3,7 @@ import Link from "next/link";
 const CallToAction = () => {
   return (
     <div className="bg-indigo-700">
-      <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
           <span className="block">Ready to improve your computer literacy?</span>
         </h2>
