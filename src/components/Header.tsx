@@ -33,9 +33,12 @@ const Header = () => {
               </Link>
             </nav>
           </div>
-          <div className="flex items-center">
-            <button className="ml-3 inline-flex items-center px-4 py-2 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-              Login
+          <div className="hidden md:flex items-center">
+            <button className="ml-3 inline-flex items-center px-4 py-2 border border-transparent text-lg font-bold  text-white ">
+              Sign up
+            </button>
+             <button className="ml-3 inline-flex items-center px-4 py-2 border border-transparent text-lg font-bold rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Sign in
             </button>
           </div>
           <div className="-mr-2 flex items-center md:hidden">
