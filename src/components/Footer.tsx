@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="px-5 py-2">
             <Link
               href="/help"
-              className="text-base text-gray-500 hover:text-gray-900"
+              className="text-lg text-gray-500 hover:text-gray-900"
             >
               Help
             </Link>
