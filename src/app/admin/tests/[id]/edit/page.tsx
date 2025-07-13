@@ -1,4 +1,6 @@
 
+"use client";
+
 import { useState } from "react";
 import AdminLayout from "../../../../../components/admin/AdminLayout";
 import MarkingRuleBuilder from "../../../../../components/admin/MarkingRuleBuilder";

@@ -1,4 +1,4 @@
-import Header from "../../../../components/Header";
+import Header from "../../../../components/Navbar";
 import Footer from "../../../../components/Footer";
 import TestResult from "../../../../components/TestResult";
 

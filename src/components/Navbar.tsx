@@ -31,12 +31,7 @@ const Header = () => {
               >
                 Dashboard
               </Link>
-              <Link
-                href="/admin"
-                className="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-lg font-medium text-gray-300 hover:text-white hover:border-gray-300"
-              >
-                Admin
-              </Link>
+              
             </nav>
           </div>
           <div className="hidden md:flex items-center">
