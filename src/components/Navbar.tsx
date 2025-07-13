@@ -105,64 +105,72 @@ const Header = () => {
           </div>
         </div>
         
-        {/* Mobile menu, show/hide based on menu state */}
-        {mobileMenuOpen && (
-          <div className="md:hidden">
-            <div className="pt-2 pb-3 space-y-1 bg-gray-700 rounded-b-lg">
-              <Link
-                href="/"
-                className={`block pl-3 pr-4 py-2 border-l-4 ${
-                  pathname === "/"
-                    ? "border-indigo-500 text-white font-bold bg-gray-800"
-                    : "border-transparent text-gray-300 hover:text-white hover:bg-gray-600 font-medium"
-                } text-base transition-colors duration-200`}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
-                href="/tests"
-                className={`block pl-3 pr-4 py-2 border-l-4 ${
-                  pathname.startsWith("/tests")
-                    ? "border-indigo-500 text-white font-bold bg-gray-800"
-                    : "border-transparent text-gray-300 hover:text-white hover:bg-gray-600 font-medium"
-                } text-base transition-colors duration-200`}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Practice Tests
-              </Link>
-              <Link
-                href="/dashboard"
-                className={`block pl-3 pr-4 py-2 border-l-4 ${
-                  pathname === "/dashboard"
-                    ? "border-indigo-500 text-white font-bold bg-gray-800"
-                    : "border-transparent text-gray-300 hover:text-white hover:bg-gray-600 font-medium"
-                } text-base transition-colors duration-200`}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Dashboard
-              </Link>
-              <div className="pt-4 pb-2 border-t border-gray-600">
-                <div className="flex items-center justify-center space-x-3">
-                  <Link
-                    href="/signup"
-                    className="block px-4 py-2 text-center text-white font-bold hover:text-white"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Sign up
-                  </Link>
-                  <Link
-                    href="/signin"
-                    className="block px-4 py-2 text-center text-white font-bold bg-indigo-600 rounded-full hover:bg-indigo-700"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Sign in
-                  </Link>
-                </div>
+     
+        
+        {/* Floating mobile menu */}
+        <div 
+          className={`fixed top-24 right-4 left-4 md:hidden z-50 transform transition-transform duration-300 ease-in-out ${
+            mobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-[-20px] opacity-0 pointer-events-none'
+          }`}
+        >
+          <div className="pt-2 pb-3 space-y-1 bg-gray-700 rounded-xl shadow-2xl border border-gray-600">
+            <div className="flex justify-between items-center px-4 py-2 border-b border-gray-600">
+              <span className="text-white font-bold">Menu</span>
+              
+            </div>
+            <Link
+              href="/"
+              className={`block pl-3 pr-4 py-2 border-l-4 mx-2 rounded-lg ${
+                pathname === "/"
+                  ? "border-indigo-500 text-white font-bold bg-gray-800"
+                  : "border-transparent text-gray-300 hover:text-white hover:bg-gray-600 font-medium"
+              } text-base transition-colors duration-200`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              href="/tests"
+              className={`block pl-3 pr-4 py-2 border-l-4 mx-2 rounded-lg ${
+                pathname.startsWith("/tests")
+                  ? "border-indigo-500 text-white font-bold bg-gray-800"
+                  : "border-transparent text-gray-300 hover:text-white hover:bg-gray-600 font-medium"
+              } text-base transition-colors duration-200`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Practice Tests
+            </Link>
+            <Link
+              href="/dashboard"
+              className={`block pl-3 pr-4 py-2 border-l-4 mx-2 rounded-lg ${
+                pathname === "/dashboard"
+                  ? "border-indigo-500 text-white font-bold bg-gray-800"
+                  : "border-transparent text-gray-300 hover:text-white hover:bg-gray-600 font-medium"
+              } text-base transition-colors duration-200`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Dashboard
+            </Link>
+            <div className="pt-4 pb-2 border-t border-gray-600">
+              <div className="flex items-center justify-center space-x-3">
+                <Link
+                  href="/signup"
+                  className="block px-4 py-2 text-center text-white font-bold hover:text-white"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Sign up
+                </Link>
+                <Link
+                  href="/signin"
+                  className="block px-4 py-2 text-center text-white font-bold bg-indigo-600 rounded-full hover:bg-indigo-700"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Sign in
+                </Link>
               </div>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </header>
   );
