@@ -44,22 +44,22 @@ const AdminTestsTable = () => {
       <table className="min-w-full divide-y divide-gray-200">
         <thead className="bg-gray-50">
           <tr>
-            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th scope="col" className="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">
               Test Name
             </th>
-            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th scope="col" className="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">
               Created
             </th>
-            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th scope="col" className="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">
               Submissions
             </th>
-            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th scope="col" className="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">
               Avg. Score
             </th>
-            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th scope="col" className="px-6 py-3 text-left text-md font-medium text-gray-500 uppercase tracking-wider">
               Status
             </th>
-            <th scope="col" className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <th scope="col" className="px-6 py-3 text-right text-md font-medium text-gray-500 uppercase tracking-wider">
               Actions
             </th>
           </tr>
@@ -68,20 +68,20 @@ const AdminTestsTable = () => {
           {mockTests.map((test) => (
             <tr key={test.id} className="hover:bg-gray-50">
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm font-medium text-gray-900">
+                <div className="text-lg font-medium text-gray-900">
                   <Link href={`/admin/tests/${test.id}`} className="hover:text-indigo-600">
                     {test.title}
                   </Link>
                 </div>
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-500">{test.createdAt}</div>
+                <div className="text-md text-gray-500">{test.createdAt}</div>
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-500">{test.submissions}</div>
+                <div className="text-md text-gray-500">{test.submissions}</div>
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-500">{test.averageScore}%</div>
+                <div className="text-md text-gray-500">{test.averageScore}%</div>
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
                 <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${

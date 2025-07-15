@@ -15,14 +15,14 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="ml-2 text-xl font-bold text-white">CompuPrep</span>
+              <span className="ml-2 text-2xl font-bold text-white">CompuPrep</span>
             </Link>
           </div>
           <div className="flex-1 flex justify-center">
             <nav className="hidden md:flex items-center md:space-x-8">
               <Link
                 href="/"
-                className={`inline-flex items-center px-1 pt-1 border-b-2 ${
+                className={`inline-flex items-center px-1 pt-1 border-b-2 text-xl ${
                   pathname === "/" 
                     ? "border-indigo-500 text-white font-bold" 
                     : "border-transparent text-gray-300 hover:text-white hover:border-gray-300 font-medium"
@@ -32,7 +32,7 @@ const Header = () => {
               </Link>
               <Link
                 href="/tests"
-                className={`inline-flex items-center px-1 pt-1 border-b-2 ${
+                className={`inline-flex items-center px-1 pt-1 border-b-2 text-xl ${
                   pathname.startsWith("/tests") 
                     ? "border-indigo-500 text-white font-bold" 
                     : "border-transparent text-gray-300 hover:text-white hover:border-gray-300 font-medium"
@@ -42,7 +42,7 @@ const Header = () => {
               </Link>
               <Link
                 href="/dashboard"
-                className={`inline-flex items-center px-1 pt-1 border-b-2 ${
+                className={`inline-flex items-center px-1 pt-1 border-b-2 text-xl ${
                   pathname === "/dashboard" 
                     ? "border-indigo-500 text-white font-bold" 
                     : "border-transparent text-gray-300 hover:text-white hover:border-gray-300 font-medium"
@@ -53,10 +53,10 @@ const Header = () => {
             </nav>
           </div>
           <div className="hidden md:flex items-center">
-            <button className="ml-3 inline-flex items-center px-4 py-2 border border-transparent text-lg font-bold  text-white ">
+            <button className="ml-3 inline-flex items-center px-4 py-2 border border-transparent text-lg font-bold  text-gray-300 ">
               Sign up
             </button>
-             <button className="ml-3 inline-flex items-center px-4 py-2 border border-transparent text-lg font-bold rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+             <button className="ml-3 inline-flex items-center px-4 py-2 border border-transparent text-lg font-bold rounded-full shadow-sm text-gray-200 bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               Sign in
             </button>
           </div>

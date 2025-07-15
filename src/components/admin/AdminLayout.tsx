@@ -20,7 +20,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
           <nav className="flex-1 px-2 pb-4 mt-5 space-y-1">
             <Link 
               href="/admin" 
-              className="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md bg-indigo-800"
+              className="flex items-center px-2 py-2 text-lg font-medium text-white rounded-md bg-indigo-800"
             >
               <svg 
                 className="w-6 h-6 mr-3 text-indigo-300" 
@@ -35,7 +35,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
             </Link>
             <Link 
               href="/admin/tests" 
-              className="flex items-center px-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600"
+              className="flex items-center px-2 py-2 text-lg font-medium text-indigo-100 rounded-md hover:bg-indigo-600"
             >
               <svg 
                 className="w-6 h-6 mr-3 text-indigo-300" 
@@ -50,7 +50,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
             </Link>
             <Link 
               href="/admin/submissions" 
-              className="flex items-center px-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600"
+              className="flex items-center px-2 py-2 text-lg font-medium text-indigo-100 rounded-md hover:bg-indigo-600"
             >
               <svg 
                 className="w-6 h-6 mr-3 text-indigo-300" 
@@ -65,7 +65,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
             </Link>
             <Link 
               href="/admin/settings" 
-              className="flex items-center px-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600"
+              className="flex items-center px-2 py-2 text-lg font-medium text-indigo-100 rounded-md hover:bg-indigo-600"
             >
               <svg 
                 className="w-6 h-6 mr-3 text-indigo-300" 
@@ -83,7 +83,7 @@ const AdminLayout = ({ children }: AdminLayoutProps) => {
           <div className="p-4 mt-auto">
             <Link 
               href="/" 
-              className="flex items-center px-2 py-2 text-sm font-medium text-indigo-100 rounded-md hover:bg-indigo-600"
+              className="flex items-center px-2 py-2 text-lg font-medium text-indigo-100 rounded-md hover:bg-indigo-600"
             >
               <svg 
                 className="w-6 h-6 mr-3 text-indigo-300" 
